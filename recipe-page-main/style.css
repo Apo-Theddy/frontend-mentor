@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf") format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    background: #F3E5D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+strong {
+    color: #454535;
+}
+
+h3 {
+    font-weight: 100;
+    font-family: 'YoungSerif';
+    font-size: 25px;
+    color: #9c4f33;
+    margin-bottom: 15px;
+}
+
+
+
+.card-recipe {
+    width: 80vh;
+    padding: 50px;
+    border-radius: 50px;
+    background: white;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-recipe img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.content-recipe h1 {
+    font-size: 40px;
+    font-family: 'YoungSerif';
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #2c2c25;
+}
+
+.content-recipe p,
+ul {
+    font-family: 'Outfit';
+    margin-bottom: 15px;
+}
+
+.recipe-preparation-time {
+    padding: 20px;
+    border-radius: 10px;
+    background: #FFF6FD;
+    margin-bottom: 25px;
+}
+
+.recipe-preparation-time p {
+    color: #86335b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.recipe-preparation-time ul {
+    margin: 0px 20px;
+}
+
+.recipe-preparation-time ul li {
+    margin: 10px;
+}
+
+.recipe-ingredients ul li,
+ol li {
+    font-family: "Outfit";
+    margin: 10px 20px;
+    color: #454535;
+}
+
+.line {
+    width: 100%;
+    height: 0.5px;
+    background: rgb(189, 188, 188, 117);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    font-family: "Outfit";
+}
+
+td {
+    border-bottom: 1px solid rgb(195, 194, 194);
+    padding: 10px;
+}
+
+.nutrition-data {
+    color: #9c4f33;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:375px) {
+    .card-recipe {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 0px;
+    }
+
+    .content-recipe img {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 30px;
+    }
+
+    .recipe-info {
+        padding: 20px;
+    }
+
+    .recipe-info h1 {
+        font-size: 35px;
+    }
+}
