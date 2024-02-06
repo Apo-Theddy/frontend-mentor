@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .areas {
+        grid-template-areas:
+            "daniel"
+            "jonathan"
+            "jeanette"
+            "patrick"
+            "kira";
+    }
+
+    .areas-lg {
+        grid-template-areas:
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira";
+    }
+}
